@@ -1,0 +1,71 @@
+[2022-05-16 17:19:39] This is codeql execute queries -J-Xmx1024M --off-heap-ram=0 --verbosity=progress --logdir=/home/intel/codeql-home/codeql-analysis/codeql_database/log --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/intel/codeql-home/codeql-analysis/qlconfig.yml --no-rerun --output=/home/intel/codeql-home/codeql-analysis/codeql_database/results -- /home/intel/codeql-home/codeql-analysis/codeql_database/db-go defination.ql
+[2022-05-16 17:19:39] Calling plumbing command: codeql resolve queries --format=json -- defination.ql
+[2022-05-16 17:19:39] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/intel/codeql-home/codeql-analysis/defination.ql"
+                      ]
+[2022-05-16 17:19:39] Creating executor with 1 threads.
+[2022-05-16 17:19:39] Calling plumbing command: codeql resolve library-path --qlconfig-file=/home/intel/codeql-home/codeql-analysis/qlconfig.yml --query=/home/intel/codeql-home/codeql-analysis/defination.ql --format=json
+[2022-05-16 17:19:39] [DETAILS] resolve library-path> Resolving query at normalized path /home/intel/codeql-home/codeql-analysis/defination.ql.
+[2022-05-16 17:19:39] [DETAILS] resolve library-path> Found no pack; trying after symlink resolution with /home/intel/codeql-home/codeql-analysis/defination.ql.
+[2022-05-16 17:19:39] [DETAILS] resolve library-path> Found enclosing pack 'codeql-analysis' at /home/intel/codeql-home/codeql-analysis.
+[2022-05-16 17:19:39] [DETAILS] resolve library-path> Adding compilation cache at /home/intel/codeql-home/codeql-analysis/.cache.
+[2022-05-16 17:19:39] [DETAILS] resolve library-path> Resolving library dependencies from /home/intel/codeql-home/codeql-analysis/defination.ql.
+[2022-05-16 17:19:39] [DETAILS] resolve library-path> QL pack dependencies for /home/intel/codeql-home/codeql-analysis resolved OK.
+[2022-05-16 17:19:39] [DETAILS] resolve library-path> Found no dbscheme through dependencies.
+[2022-05-16 17:19:39] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/home/intel/codeql-home/codeql-analysis"
+                        ],
+                        "compilationCache" : [
+                          "/home/intel/codeql-home/codeql-analysis/.cache"
+                        ],
+                        "relativeName" : "codeql-analysis/defination.ql",
+                        "possibleAdvice" : "There should probably be a qlpack.yml file declaring dependencies in /home/intel/codeql-home/codeql-analysis or an enclosing directory.",
+                        "qlPackName" : "codeql-analysis"
+                      }
+[2022-05-16 17:19:39] Calling plumbing command: codeql resolve ml-models --search-path=/home/intel/codeql-home/codeql-analysis --insecurely-execute-ml-model-checksums=
+[2022-05-16 17:19:39] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /home/intel/codeql-home/codeql-analysis/
+[2022-05-16 17:19:39] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /home/intel/codeql-home/codeql/.codeqlmanifest.json
+[2022-05-16 17:19:39] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /home/intel/codeql-home/
+[2022-05-16 17:19:39] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /home/intel/codeql-home/codeql-repo/.codeqlmanifest.json
+[2022-05-16 17:19:39] [DETAILS] resolve ml-models> Not scanning from /home/intel/codeql-home/codeql which is already done.
+[2022-05-16 17:19:39] [DETAILS] resolve ml-models> Scanning for [codeql-pack.yml, qlpack.yml] from /home/intel/codeql-home/codeql-go/.codeqlmanifest.json
+[2022-05-16 17:19:39] Plumbing command codeql resolve ml-models completed:
+                      {
+                        "models" : [ ]
+                      }
+[2022-05-16 17:19:39] [PROGRESS] execute queries> Compiling query plan for /home/intel/codeql-home/codeql-analysis/defination.ql.
+[2022-05-16 17:19:39] [DETAILS] execute queries> Resolving imports for /home/intel/codeql-home/codeql-analysis/defination.ql.
+[2022-05-16 17:19:39] Resolved file set for /home/intel/codeql-home/codeql-analysis/defination.ql hashes to a35e0cd42d8ca46a65cbbc13363c77e006309cfe.
+[2022-05-16 17:19:39] [DETAILS] execute queries> Checking QL for /home/intel/codeql-home/codeql-analysis/defination.ql.
+[2022-05-16 17:19:40] ExternalModuleBindingPass ...
+[2022-05-16 17:19:40] ExternalModuleBindingPass time: 00:00.001
+[2022-05-16 17:19:40] QLPredicateSynthesiser ...
+[2022-05-16 17:19:40] QLPredicateSynthesiser time: 00:00.001
+[2022-05-16 17:19:40] DeclarationBindingPass ...
+[2022-05-16 17:19:40] DeclarationBindingPass time: 00:00.007
+[2022-05-16 17:19:40] Fixed point time ...
+[2022-05-16 17:19:40] Fixed point time time: 00:00.010
+[2022-05-16 17:19:40] ReferenceBindingPass ...
+[2022-05-16 17:19:40] ReferenceBindingPass time: 00:00.000
+[2022-05-16 17:19:40] ReferenceBindingCheck ...
+[2022-05-16 17:19:40] ReferenceBindingCheck time: 00:00.001
+[2022-05-16 17:19:40] PredicateBodyBindingPass ...
+[2022-05-16 17:19:40] PredicateBodyBindingPass time: 00:00.002
+[2022-05-16 17:19:40] LanguagePragmaPropagationPass ...
+[2022-05-16 17:19:40] LanguagePragmaPropagationPass time: 00:00.000
+[2022-05-16 17:19:40] Ambiguity checks ...
+[2022-05-16 17:19:40] Ambiguity checks time: 00:00.002
+[2022-05-16 17:19:40] Ql checks ...
+[2022-05-16 17:19:40] Ql checks time: 00:00.015
+[2022-05-16 17:19:40] [ERROR] execute queries> ERROR: Could not resolve module go. There should probably be a qlpack.yml file declaring dependencies in /home/intel/codeql-home/codeql-analysis or an enclosing directory. (/home/intel/codeql-home/codeql-analysis/defination.ql:9,8-10)
+[2022-05-16 17:19:40] [ERROR] execute queries> ERROR: Could not resolve type Ident (/home/intel/codeql-home/codeql-analysis/defination.ql:11,6-11)
+[2022-05-16 17:19:40] [ERROR] execute queries> ERROR: Could not resolve type Ident (/home/intel/codeql-home/codeql-analysis/defination.ql:11,17-22)
+[2022-05-16 17:19:40] [ERROR] execute queries> ERROR: Could not resolve type Entity (/home/intel/codeql-home/codeql-analysis/defination.ql:11,28-34)
+[2022-05-16 17:19:40] Sequence stamp origin is -6455585900224284266
+[2022-05-16 17:19:40] Pausing evaluation to close the cache at sequence stamp o+0
+[2022-05-16 17:19:40] The disk cache is freshly trimmed; leave it be.
+[2022-05-16 17:19:40] Unpausing evaluation
+[2022-05-16 17:19:40] Exiting with code 2

@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: "/home/intel/codeql-home/codeql-go/emco-base"
+baselineLinesOfCode: 96006
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "go"
+creationMetadata:
+  sha: "c8be4c8e63ece59fc96f87aa77e8b0d05e0efbdd"
+  cliVersion: "2.9.1"
+  creationTime: "2022-05-16T11:24:32.156740799Z"

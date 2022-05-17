@@ -1,0 +1,15 @@
+[2022-05-16 17:21:25] This is codeql database analyze codeql_database defination.ql --format=csv --output=codeql-analysis/go-results.csv
+[2022-05-16 17:21:25] Log file was started late.
+[2022-05-16 17:21:25] [PROGRESS] database analyze> Running queries.
+[2022-05-16 17:21:25] Running plumbing command: codeql database run-queries --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/intel/codeql-home/codeql-analysis/qlconfig.yml --no-rerun -- /home/intel/codeql-home/codeql-analysis/codeql_database defination.ql
+[2022-05-16 17:21:25] Calling plumbing command: codeql resolve ram --format=json
+[2022-05-16 17:21:25] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1024M",
+                        "--off-heap-ram=0"
+                      ]
+[2022-05-16 17:21:25] Spawning plumbing command: execute queries -J-Xmx1024M --off-heap-ram=0 --verbosity=progress --logdir=/home/intel/codeql-home/codeql-analysis/codeql_database/log --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/intel/codeql-home/codeql-analysis/qlconfig.yml --no-rerun --output=/home/intel/codeql-home/codeql-analysis/codeql_database/results -- /home/intel/codeql-home/codeql-analysis/codeql_database/db-go defination.ql
+[2022-05-16 17:21:26] [ERROR] Spawned process exited abnormally (code 2; tried to run: [/home/intel/codeql-home/codeql/tools/linux64/java/bin/java, -Xmx1024M, -Djava.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, -cp, /home/intel/codeql-home/codeql/tools/codeql.jar, com.semmle.cli2.CodeQL, env_argv, execute, queries, -J-Xmx1024M, _, _, _, _, _, _, _, --no-rerun, _, --, /home/intel/codeql-home/codeql-analysis/codeql_database/db-go, defination.ql])
+[2022-05-16 17:21:26] Plumbing command codeql execute queries terminated with status 2.
+[2022-05-16 17:21:26] Plumbing command codeql database run-queries completed with status 2.
+[2022-05-16 17:21:26] Exiting with code 2
